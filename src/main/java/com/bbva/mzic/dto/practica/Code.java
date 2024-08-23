@@ -1,3 +1,5 @@
+package com.bbva.mzic.dto.practica;
+
 public class Code {
     private int id;
 
@@ -16,7 +18,7 @@ public class Code {
 		if (obj.getClass() != getClass()) {
 			return false;
 		}
-		final CodeDTO rhs = (CodeDTO) obj;
+		final Code rhs = (Code) obj;
 		return new EqualsBuilder().appendSuper(super.equals(obj))
 					.append(id, rhs.id)
 					.isEquals();
